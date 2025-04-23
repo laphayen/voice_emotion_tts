@@ -1,0 +1,27 @@
+sampling_rate: 22050
+hop_size: 256
+win_size: 1024
+n_fft: 1024
+num_mels: 80
+n_speakers: 1
+cleaners: korean_cleaners
+add_blank: true
+use_noise_scale: true
+
+model:
+  encoder_dim: 192
+  decoder_dim: 192
+  hidden_dim: 192
+  style_dim: 128
+  emotion_dim: 128
+  use_emotion: true
+  use_pitch: false
+  use_energy: false
+
+synthesizer:
+  max_len: 1000
+  batch_size: 1
+
+inference:
+  noise_scale: 0.667
+  length_scale: 1.0
